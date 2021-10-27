@@ -1,89 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" >
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/includes.js"></script>
+  <script> 
+    var page="index";
+  </script>
+  <script src="assets/js/modal.js"></script>
 
-  <title>Shangilia CBO</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/shangilia-logo-icon.webp" rel="icon">
-  <link href="assets/img/shangilia-logo-icon.webp" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: BizLand - v3.1.0
-  * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
+<head></head>
 
 <body>
-
-  <!-- ======= Top Bar ======= -->
-  <section id="topbar" class="d-flex align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between head_size">
-      <div class="contact-info d-flex align-items-center logo ">
-        <a href="index.html" class="logo"><img src="assets/img/shangilia-logo-icon.webp" alt="Shangilia"> Shangilia</a>
-        <!-- <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@shangilia.com">shangiliaorg@gmail.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+254 712 345 678</span></i> -->
-      </div>
-      <div class="social-links d-none d-md-flex align-items-center">
-        <a href="https://twitter.com/shangiliagroup" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="https://web.facebook.com/Shangilia-Group-112974567708328/?ref=page_internal" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/shangilia_group/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
-      </div>
-    </div>
-  </section>
-
-  
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center ">
-    <div class=" container d-flex align-items-center justify-content-between">
-
-      <!-- <h1 class="logo"><a href="index.html">Shangilia<span></span></a></h1> -->
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/shangilia-logo-icon.webp" alt="Shangilia"> Shangilia</a> -->
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link active" href="index.html">Home</a></li>
-          <li><a class="nav-link" href="about.html">About Us</a></li>
-          <!-- <li><a class="nav-link" href="#clients">Partners</a></li> -->
-          <li><a class="nav-link" href="projects.html">What We Do</a></li>
-          <li><a class="nav-link " href="gallery.html">Resources</a></li>
-          <!-- <li><a class="nav-link" href="leadership.html">Leadership</a></li> -->
-          <li><a class="nav-link" href="support.html">Get Involved</a></li>
-          <li><a class="nav-link" href="contact.html">Contact Us</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
+  <navbar></navbar>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero_index" class="d-flex align-items-center index-bg">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1>Welcome to <span class = "stroke">Shangilia</span></h1></br>
-      <h2><mark>We are a team focused on making the world a better place.</mark></h2>
+      <h1><span class="stroke1">Welcome to </span><span class = "stroke">Shangilia</span></h1></br>
+      <h2 class="stroke2">We are a team focused on making the world a better place.</h2>
       <div class="d-flex">
         <a href="#faq" class="btn-get-started">Support Us</a>
         <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
@@ -240,7 +174,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="count-box">
               <a href="projects.html"><i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
               <p>Homes Visited</p></a>
             </div>
           </div>
@@ -248,7 +182,7 @@
           <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
             <div class="count-box">
               <a href="projects.html"><i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
               <p>Projects</p></a>
             </div>
           </div>
@@ -256,7 +190,7 @@
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="count-box">
               <a href="support.html"><i class="bx bx-money"></i>
-              <span data-purecounter-start="0" data-purecounter-end="10000" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="20000" data-purecounter-duration="1" class="purecounter"></span>
               <p>Shillings in Donations</p></a>
             </div>
           </div>
@@ -264,7 +198,7 @@
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="count-box">
              <a href="about.html"><i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="40" data-purecounter-duration="1" class="purecounter"></span>
               <p>Members</p></a>
             </div>
           </div>
@@ -328,7 +262,7 @@
             <div class="icon-box">
               <div class="icon"><i class="bx bx-group"></i></div>
               <h4><a href="projects.html#communityEvents">Community Events</a></h4>
-              <p>Community events like visitations at shangilia are ongoin and will never stop.</p>
+              <p>Community events like visitations at shangilia are ongoin and will never stop.</p>       
             </div>
           </div>
 
@@ -375,6 +309,7 @@
               <h4><a href="projects.html#childrensDay ">Childrens Day</a></h4>
               <p>A mega event is being planned for the children within Mogogosiek Area. 
                 It will be full of fun and games and will take place at the end of 2021.</p>
+                <a href="#buyticket" role="button" class="btn btn-lg btn-primary" data-bs-toggle="modal">Buy Ticket</a>
             </div>
           </div>
 
@@ -938,7 +873,33 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+                  <!-- Modal -->
+                  <div class="modal fade" id="buyticket" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Event Ticket</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <form method="post" action="assets/api/mpesa.php">
+                            <div class="form-group">
+                              <label for="PhoneNumber">Phone Number</label>
+                              <input type="text" class="form-control" id="PhoneNumber" placeholder="Enter phone number">
+                            </div>
+                       
+                        </div>
+                        <div class="modal-footer">
+                          <input type="submit" name="BuyTicket" class="btn btn-primary" value="Buy Ticket" />
+                          <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                        </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
 </body>
 
 </html>
