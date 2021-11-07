@@ -5,3 +5,7 @@
   $('#buyticket').click(function () {
 	$('#buyticket').modal({show : true});
 });
+
+$('#donate').click(function () {
+	$('#donate').modal({show : true});
+});

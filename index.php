@@ -1,17 +1,35 @@
+<?php     $request = $_SERVER['REQUEST_URI'];
+
+switch ($request) {
+    case '/' :
+    case '' :
+        require __DIR__ . '/index.php';
+        break;
+    case '/about' :
+        require __DIR__ . '/about.php';
+        break;
+    default:
+        http_response_code(404);
+        //require __DIR__ . '/404.php';
+        break;
+}
+?>  
 <!DOCTYPE html>
 <html lang="en" >
 
   <script src="assets/js/jquery-3.6.0.min.js"></script>
-  <script src="assets/js/includes.js"></script>
-  <script> 
-    var page="index";
-  </script>
   <script src="assets/js/modal.js"></script>
-
-<head></head>
+  
+<?php include 'includes/head.php' ?>
 
 <body>
-  <navbar></navbar>
+  <?php 
+    session_start();
+    $page = 'home';
+    $_SESSION['page'] = $page;
+    include 'includes/navigation_bar.php';
+  ?>
+  
 
   <!-- ======= Hero Section ======= -->
   <section id="hero_index" class="d-flex align-items-center index-bg">
@@ -19,7 +37,7 @@
       <h1><span class="stroke1">Welcome to </span><span class = "stroke">Shangilia</span></h1></br>
       <h2 class="stroke2">We are a team focused on making the world a better place.</h2>
       <div class="d-flex">
-        <a href="#faq" class="btn-get-started">Support Us</a>
+        <!-- <a href="#faq" class="btn-get-started">Support Us</a> -->
         <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
       </div>
     </div>
@@ -729,7 +747,7 @@
             <div class="info-box  mb-4">
               <i class="bx bx-envelope"></i>
               <h3>Email Us</h3>
-              <p>info@shangilia.co.ke</p>
+              <p>info@shangilia.org</p>
             </div>
           </div>
 
@@ -737,7 +755,7 @@
             <div class="info-box  mb-4">
               <i class="bx bx-phone-call"></i>
               <h3>Call | Text | WhatsApp</h3>
-              <p>+254 712 345 678</p>
+              <p>+254 799 515 669</p>
             </div>
           </div>
 
@@ -807,8 +825,8 @@
             <h3>Contact Us<span></span></h3>
             <p>
               Bomet, KENYA</br>
-              <strong>Phone:</strong> +254 712 345 678<br>
-              <strong>Email:</strong> shangiliaorg@gmail.com<br>
+              <strong>Phone:</strong> +254 799 515 669<br>
+              <strong>Email:</strong> <a href="mailto:info@shangilia.org">info@shangila.org</a><br>
             </p>
           </div>
 
@@ -861,15 +879,6 @@
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
