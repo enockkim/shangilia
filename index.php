@@ -324,10 +324,10 @@ switch ($request) {
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-run"></i></div>
-              <h4><a href="projects.html#childrensDay ">Childrens Day</a></h4>
+              <h4><a href="assets/img/shangilia_na_watoto.jpg" data-portfolio="portfolioportfolio" class="portfolio-lightbox preview-link" title="Shangilia na Watoto"><i class="bx "></i>Shangilia na Watoto</a></h4>
               <p>A mega event is being planned for the children within Mogogosiek Area. 
-                It will be full of fun and games and will take place at the end of 2021.</p>
-                <a href="#buyticket" role="button" class="btn btn-lg btn-primary" data-bs-toggle="modal">Buy Ticket</a>
+                It will be full of fun and games and will take place on December 27th, 2021 at 10:00 AM, Mogogosiek Baby Home.</p>
+                <!-- <a href="#buyticket" role="button" class="btn btn-lg btn-primary" data-bs-toggle="modal">Buy Ticket</a> -->
             </div>
           </div>
 
@@ -826,7 +826,7 @@ switch ($request) {
             <p>
               Bomet, KENYA</br>
               <strong>Phone:</strong> +254 799 515 669<br>
-              <strong>Email:</strong> <a href="mailto:info@shangilia.org">info@shangila.org</a><br>
+              <strong>Email:</strong> <a href="mailto:info@shangilia.org">info@shangilia.org</a><br>
             </p>
           </div>
 

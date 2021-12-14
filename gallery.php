@@ -14,7 +14,7 @@
   ?>
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center gallery-bg">
+  <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
       <h1><span class = "stroke">Shangilia</span></h1></br>
       <h2 ><mark>A picture speaks a thousand words.</mark></h2>
@@ -375,7 +375,7 @@
             <p>
               Bomet, KENYA</br>
               <strong>Phone:</strong> +254 712 345 678<br>
-              <strong>Email:</strong> info@shangilia.com<br>
+              <strong>Email:</strong> <a href="mailto:info@shangilia.org">info@shangilia.org</a><br>
             </p>
           </div>
 

@@ -129,7 +129,7 @@
             <p>
               Bomet, KENYA</br>
               <strong>Phone:</strong> +254 712 345 678<br>
-              <strong>Email:</strong> info@shangilia.com<br>
+              <strong>Email:</strong> <a href="mailto:info@shangilia.org">info@shangilia.org</a><br>
             </p>
           </div>
 

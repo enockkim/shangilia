@@ -13,7 +13,7 @@
     include 'includes/navigation_bar.php';
   ?>
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center projects-bg">
+  <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
       <h1> <span class = "stroke">Shangilia </span>Projects</h1></br>
       <h2><mark>We are a team focused on making the world a better place by starting projects that benefits our members and the community.</mark></h2>
@@ -131,7 +131,7 @@
               <div class="icon"><i class="bx bx-run"></i></div>
               <h4><a href="#childrensDay">Childrens Day</a></h4>
               <p>A mega event is being planned for the children within Mogogosiek Area. 
-                It will be full of fun and games and will take place at the end of 2021.</p>
+              It will be full of fun and games and will take place on December 27th, 2021 at 10:00 AM, Mogogosiek Baby Home.</p>
             </div>
           </div>
 
@@ -267,13 +267,13 @@
           <div class="section-title">
             <!-- <h2>Projects</h2> -->
             <h3>Childrens' Day</h3>
-            <p>December 2021, mark it in your calenders. We will have a mega event for all kids in the neighbouring community.
+            <p>December 27th 2021, mark it in your calenders. We will have a mega event for all kids in the neighbouring community.
             </p>
           </div> 
 
           <div class="row">
             <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-              <img src="assets/img/children.webp" class="img-fluid" alt="">
+              <img src="assets/img/shangilia_na_watoto.jpg" class="img-fluid" alt="">
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
               <h3>Childrens' Day</h3>
@@ -316,7 +316,7 @@
             <p>
               Bomet, KENYA</br>
               <strong>Phone:</strong> +254 712 345 678<br>
-              <strong>Email:</strong> info@shangilia.com<br>
+              <strong>Email:</strong> <a href="mailto:info@shangilia.org">info@shangilia.org</a><br>
             </p>
           </div>
 
