@@ -59,7 +59,7 @@
             <div class="info-box  mb-4">
               <i class="bx bx-phone-call"></i>
               <h3>Call | Text | WhatsApp</h3>
-              <p>+254 712 345 678</p>
+              <p>+254 799 515 669</p>
             </div>
           </div>
 
@@ -128,7 +128,7 @@
             <h3>Shangilia CBO<span></span></h3>
             <p>
               Bomet, KENYA</br>
-              <strong>Phone:</strong> +254 712 345 678<br>
+              <strong>Phone:</strong>+254 799 515 669<br>
               <strong>Email:</strong> <a href="mailto:info@shangilia.org">info@shangilia.org</a><br>
             </p>
           </div>

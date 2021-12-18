@@ -182,7 +182,7 @@
 
         <div class="section-title">
           <!-- <h2>Gallery</h2> -->
-          <h3>Check our <span>Gallery</span></h3>
+          <h3>Check out our <span>Gallery</span></h3>
           <p>A picture is worth a thousand words.</p>
         </div>
 
@@ -374,7 +374,7 @@
             <h3>Shangilia CBO<span></span></h3>
             <p>
               Bomet, KENYA</br>
-              <strong>Phone:</strong> +254 712 345 678<br>
+              <strong>Phone:</strong>+254 799 515 669<br>
               <strong>Email:</strong> <a href="mailto:info@shangilia.org">info@shangilia.org</a><br>
             </p>
           </div>

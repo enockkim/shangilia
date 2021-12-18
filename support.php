@@ -47,9 +47,15 @@
                   <!-- Button trigger modal -->
                   <br/>
                   <br/>
-                  <a href="#donate" role="button" class="btn btn-lg btn-success" data-bs-toggle="modal">
+                  <!-- <a href="#donate" role="button" class="btn btn-lg btn-success" data-bs-toggle="modal">
                     Donate
-                  </a>
+                  </a> -->
+                  <ul>
+                    Pay Bill: 247247
+                </ul>
+                <ul>
+                    Acc. No.: 
+                </ul>
 
               </p>
             </div>
@@ -59,10 +65,12 @@
             <div class="icon-box">
               <img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" border="0" alt="PayPal Logo">            
               <h4><a href=""></a></h4>
-              <p></br>We accept donations via PayPal. </br>
-                Payments can be sent to the following PayPal account: <ul>shangiliaorg@gmail.com</ul> 
+              <p></br>We will accept donations via PayPal very soon. </br>
+                <!-- Payments can be sent to the following PayPal account: <ul>shangiliaorg@gmail.com</ul>  -->
               </p>
-              <form action="https://www.paypal.com/donate" method="post" target="_top">
+              </br>
+              <form action="#" method="post" target="_top">
+              <!-- <form action="https://www.paypal.com/donate" method="post" target="_top"> -->
                 <input type="hidden" name="hosted_button_id" value="QCBUU558SLQ4J" />
                 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
                 <img alt="" border="0" src="https://www.paypal.com/en_KE/i/scr/pixel.gif" width="1" height="1" />
@@ -118,7 +126,7 @@
             <h3>Shangilia CBO<span></span></h3>
             <p>
               Bomet, KENYA</br>
-              <strong>Phone:</strong> +254 712 345 678<br>
+              <strong>Phone:</strong>+254 799 515 669<br>
               <strong>Email:</strong> <a href="mailto:info@shangilia.org">info@shangilia.org</a><br>
             </p>
           </div>

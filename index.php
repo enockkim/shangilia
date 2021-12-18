@@ -191,7 +191,7 @@ switch ($request) {
 
           <div class="col-lg-3 col-md-6">
             <div class="count-box">
-              <a href="projects.html"><i class="bi bi-emoji-smile"></i>
+              <a href="projects.php"><i class="bi bi-emoji-smile"></i>
               <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
               <p>Homes Visited</p></a>
             </div>
@@ -199,7 +199,7 @@ switch ($request) {
 
           <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
             <div class="count-box">
-              <a href="projects.html"><i class="bi bi-journal-richtext"></i>
+              <a href="projects.php"><i class="bi bi-journal-richtext"></i>
               <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
               <p>Projects</p></a>
             </div>
@@ -207,15 +207,15 @@ switch ($request) {
 
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="count-box">
-              <a href="support.html"><i class="bx bx-money"></i>
+              <a href="support.php"><i class="bx bx-money"></i>
               <span data-purecounter-start="0" data-purecounter-end="20000" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Shillings in Donations</p></a>
+              <p>Donations</p></a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="count-box">
-             <a href="about.html"><i class="bi bi-people"></i>
+             <a href="about.php"><i class="bi bi-people"></i>
               <span data-purecounter-start="0" data-purecounter-end="40" data-purecounter-duration="1" class="purecounter"></span>
               <p>Members</p></a>
             </div>
