@@ -2,8 +2,6 @@ name: Frontend - Build and Push Docker Image to Docker Hub
 
 on:
   push:
-    paths:
-      - 'Prema.ChamaOne.Frontend/**'  # This will watch for changes in the Frontend directory
   workflow_dispatch:
 
 jobs:
@@ -26,6 +24,6 @@ jobs:
       - name: Build and push Docker image to registry
         uses: docker/build-push-action@v4
         with:
-          context: ./Prema.ChamaOne.Frontend  # Ensure the context points to the Frontend directory
+          context: . # Ensure the context points to the Frontend directory
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/prema.chamaone.frontend:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/shangilia_website_old:latest
