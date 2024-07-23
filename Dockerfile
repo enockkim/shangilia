@@ -1,20 +1,23 @@
-# Use the official PHP 8.0 image as the base
-FROM php:8.0-apache
+# Use the official PHP image with Nginx
+FROM php:8.0-fpm
 
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
-    libzip-dev \
-    unzip \
-    && docker-php-ext-install zip pdo_mysql
+# Install Nginx
+RUN apt-get update && apt-get install -y nginx
 
-# Enable Apache rewrite module
-RUN a2enmod rewrite
+# Install any additional PHP extensions you need
+RUN docker-php-ext-install mysqli pdo pdo_mysql
 
-# Set the document root to Laravel's public directory
-ENV APACHE_DOCUMENT_ROOT /var/www/html/public
+# Copy your Nginx configuration file
+COPY nginx.conf /etc/nginx/nginx.conf
 
-# Copy the application files to the container
+# Copy the PHP source code to the container
 COPY . /var/www/html
 
 # Set the working directory
 WORKDIR /var/www/html
+
+# Expose port 80
+EXPOSE 80
+
+# Start Nginx and PHP-FPM
+CMD service nginx start && php-fpm
