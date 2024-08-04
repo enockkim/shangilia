@@ -26,8 +26,14 @@ COPY . /var/www/html
 # Set working directory
 WORKDIR /var/www/html
 
+# Make sure files/folders needed by the processes are accessible when they run under the nobody user
+RUN chown -R nobody.nobody /var/www/html /run /var/lib/nginx /var/log/nginx
+
+# Switch to use a non-root user from here on
+USER nobody
+
 # Expose port 80
 EXPOSE 80
 
 # Start Nginx and PHP-FPM
-CMD ["sh", "-c", "nginx && php-fpm"]
+CMD ["/bin/sh", "-c", "php-fpm -D && nginx -g 'daemon off;'"]
