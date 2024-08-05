@@ -1,6 +1,17 @@
-FROM php:7.4.3-fpm-alpine3.11
+# Use the official PHP image as a base
+FROM php:7.4-fpm
 
-# Copy the application code
-COPY . /app
+# Install necessary PHP extensions (if needed)
+RUN docker-php-ext-install mysqli pdo pdo_mysql
 
-VOLUME ["/app"]
+# Set the working directory
+WORKDIR /var/www/html
+
+# Copy the application code to the container
+COPY . .
+
+# Expose port 9000 for PHP-FPM
+EXPOSE 9000
+
+# Start PHP-FPM server
+CMD ["php-fpm"]
