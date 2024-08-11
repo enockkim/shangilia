@@ -70,7 +70,7 @@ switch ($request) {
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
               <div class="icon"><i class="bx bx-user-check"></i></div>
               <h4 class="title"><a href="about.html">Membership</a></h4>
-              <p class="description">We are a group of focused men and women from different economic, social, and ethnic backgrounds one single mindset of helping others.</p>
+              <p class="description">We are a group of focused men and women from different economic, social, and ethnic backgrounds with one single mindset of helping others.</p>
             </div>
           </div>
 
