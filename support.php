@@ -1,17 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php     
 
+session_start(); // Start session at the very beginning
+
+$request = $_SERVER['REQUEST_URI'];
+$page = 'support'; // Default page
+
+switch ($request) {
+
+    case '/about' :
+        require __DIR__ . '/about.php';
+        break;
+    default:
+        http_response_code(404);
+        //require __DIR__ . '/404.php';
+        break;
+}
+$_SESSION['page'] = $page;
+
+// Start output buffering to prevent "headers already sent" issues
+ob_start();
+?>  
+<!DOCTYPE html>
+<html lang="en" >
+
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/modal.js"></script>
+  
 <?php include 'includes/head.php' ?>
-<script src="assets/js/modal.js"></script>
 
 <body>
   <?php 
-    session_start();
-    $page = 'support';
-    $_SESSION['page'] = $page;
     include 'includes/navigation_bar.php';
   ?>
-
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">

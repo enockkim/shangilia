@@ -1,10 +1,12 @@
-<?php     $request = $_SERVER['REQUEST_URI'];
+<?php     
+
+session_start(); // Start session at the very beginning
+
+$request = $_SERVER['REQUEST_URI'];
+$page = 'home'; // Default page
 
 switch ($request) {
-    case '/' :
-    case '' :
-        require __DIR__ . '/index.php';
-        break;
+
     case '/about' :
         require __DIR__ . '/about.php';
         break;
@@ -13,6 +15,10 @@ switch ($request) {
         //require __DIR__ . '/404.php';
         break;
 }
+$_SESSION['page'] = $page;
+
+// Start output buffering to prevent "headers already sent" issues
+ob_start();
 ?>  
 <!DOCTYPE html>
 <html lang="en" >
@@ -24,9 +30,6 @@ switch ($request) {
 
 <body>
   <?php 
-    session_start();
-    $page = 'home';
-    $_SESSION['page'] = $page;
     include 'includes/navigation_bar.php';
   ?>
   
@@ -70,7 +73,7 @@ switch ($request) {
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
               <div class="icon"><i class="bx bx-user-check"></i></div>
               <h4 class="title"><a href="about.html">Membership</a></h4>
-              <p class="description">We are a group of focused men and women from different economic, social, and ethnic backgrounds one single mindset of helping others.</p>
+              <p class="description">We are a group of focused men and women from different economic, social, and ethnic backgrounds with a single mindset of helping others.</p>
             </div>
           </div>
 

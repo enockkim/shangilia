@@ -1,32 +1,37 @@
+<?php     
+
+session_start(); // Start session at the very beginning
+
+$request = $_SERVER['REQUEST_URI'];
+$page = 'contact'; // Default page
+
+switch ($request) {
+
+    case '/about' :
+        require __DIR__ . '/about.php';
+        break;
+    default:
+        http_response_code(404);
+        //require __DIR__ . '/404.php';
+        break;
+}
+$_SESSION['page'] = $page;
+
+// Start output buffering to prevent "headers already sent" issues
+ob_start();
+?>  
 <!DOCTYPE html>
 <html lang="en" >
 
   <script src="assets/js/jquery-3.6.0.min.js"></script>
-
-  <?php include 'includes/head.php' ?>
+  <script src="assets/js/modal.js"></script>
+  
+<?php include 'includes/head.php' ?>
 
 <body>
   <?php 
-    session_start();
-    $page = 'contact';
-    $_SESSION['page'] = $page;
     include 'includes/navigation_bar.php';
   ?>
-  <!-- ======= Hero Section ======= 
-  <section id="hero" class="d-flex align-items-center contact-bg">
-    <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1>Contact <span class = "stroke">Shangilia</span></h1></br>
-      <h2><mark>Feel free to send us a message.</mark></h2>
-      <div class="d-flex">
-         <a href="support.html" class="btn-get-started">Support Us</a> 
-         <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
-      </div>
-    </div>
-  </section>End Hero
--->
-
-  <main id="main">
-
  
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">

@@ -1,17 +1,14 @@
-# Use the official PHP image as a base
 FROM php:7.4-fpm
 
-# Install necessary PHP extensions (if needed)
-RUN docker-php-ext-install mysqli pdo pdo_mysql
+RUN apt-get update && apt-get install -y nginx
 
-# Set the working directory
-WORKDIR /var/www/html
+COPY . /var/www/html/
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY custom-php.ini /usr/local/etc/php/conf.d/custom-php.ini
 
-# Copy the application code to the container
-COPY . .
+RUN chown -R www-data:www-data /var/www/html \
+    && chmod -R 755 /var/www/html
 
-# Expose port 9000 for PHP-FPM
-EXPOSE 9000
+EXPOSE 80
 
-# Start PHP-FPM server
-CMD ["php-fpm"]
+CMD sh -c "nginx && php-fpm"
